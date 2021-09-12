@@ -1,3 +1,4 @@
+import { UsersService } from './services/users.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
   
 })
 export class UserComponent implements OnInit {
-  constructor(){}
+  constructor(
+    userservice:UsersService
+  ){}
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
