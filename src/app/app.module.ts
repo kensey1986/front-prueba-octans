@@ -1,23 +1,18 @@
-import { AppRoutingModule } from './app.routing.module';
-import { UserComponent } from './pages/users/user.component';
-import { MaterialModule } from './material/material.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar/navbar.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserComponent } from './users/user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
+    UserComponent
   ],
   imports: [
-    MaterialModule,
-    AppRoutingModule,
     BrowserModule,
-    BrowserAnimationsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
